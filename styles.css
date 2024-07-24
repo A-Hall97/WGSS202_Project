@@ -25,6 +25,8 @@ img {
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    flex: 0 0 300px;
+    margin-bottom: 20px;
     justify-content: space-between;
 }
 
@@ -54,11 +56,13 @@ img {
 
 .modal-content {
     display: block;
-    margin: auto; /* Center the modal content */
+    position: fixed; /* Fixed position to stay centered */
+    top: 50%; /* Move the top of the modal to the center */
+    left: 50%; /* Move the left of the modal to the center */
+    transform: translate(-50%, -50%); /* Center the modal */
     max-width: 80%; /* Adjust maximum width of modal content */
     max-height: 80%; /* Adjust maximum height of modal content */
     text-align: center;
-    position: relative; /* Ensure relative positioning */
 }
 
 .modal-content img {
